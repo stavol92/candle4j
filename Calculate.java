@@ -8,27 +8,27 @@ public class Calculate {
 		System.out.println("Result: " + res);
 	}
 	
-	// сложение
+	// СЃР»РѕР¶РµРЅРёРµ
 	public static int add(int a, int b) {
 		return a + b;
 	}
 	
-	// вычитание
+	// РІС‹С‡РёС‚Р°РЅРёРµ
 	public static int sub(int a, int b) {
 		return a - b;
 	}
 	
-	// умножение
+	// СѓРјРЅРѕР¶РµРЅРёРµ
 	public static float multy(float a, float b) {
 		return a * b;
 	}
 	
-	// деление
+	// РґРµР»РµРЅРёРµ
 	public static double div(double a, double b) {
 		return a / b;
 	}
 	
-	// возведение в степень
+	// РІРѕР·РІРµРґРµРЅРёРµ РІ СЃС‚РµРїРµРЅСЊ
 	public static int invol(int a, int b) {
 		int res = a;
 		for (int i = 1; i < b; i++) {
