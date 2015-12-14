@@ -48,16 +48,6 @@ public class Calculator {
     }
 
     /**
-     * Возводит число в переданную степень
-     * @param exp
-     */
-    public void involve(int exp) {
-        for (int i = 1; i < exp; i++) {
-            this.result *= this.result;
-        }
-    }
-
-    /**
      * Возвращает результат вычислений
      * @return
      */
