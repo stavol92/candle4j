@@ -3,9 +3,9 @@ package com.vovnet.app.calc;
 import java.util.Scanner;
 
 /**
- * Created by Vladimir Saykovsky on 14.12.2015.
+ * Created by Vladimir on 14.12.2015.
  *
- * Калькулятор запрашивающий данные для расчетов с консоли.
+ * Calculates user input.
  */
 public class InteractRunner {
 
@@ -24,7 +24,7 @@ public class InteractRunner {
     }
 
     /**
-     * constructor
+     * Constructor
      */
     public InteractRunner() {
         scanner = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class InteractRunner {
     }
 
     /**
-     * Запуск калькулятора
+     * Start the calculator
      */
     public void start() {
         while (!exit.equals("yes")) {
@@ -47,7 +47,7 @@ public class InteractRunner {
     }
 
     /**
-     * Спрашивает у пользователя завершить ли работу программе
+     * Ask the user "Exit the app?"
      */
     public void requestExitApp() {
         System.out.println("Exit? yes/no");
@@ -58,7 +58,7 @@ public class InteractRunner {
     }
 
     /**
-     * Запрос на очистку данных
+     * Ask the user "Clean the result?"
      */
     private void requestClean() {
         System.out.println("Clean result? yes/no");
@@ -71,7 +71,7 @@ public class InteractRunner {
     }
 
     /**
-     * Очищает результаты
+     * Cleaning the result
      */
     private void cleanResult() {
         if (clean.equals("yes")) {
@@ -83,7 +83,7 @@ public class InteractRunner {
     }
 
     /**
-     * Запрашивает у пользователя данные
+     * Requests the user data
      */
     private void requestData() {
         if (this.isClean) {
@@ -100,9 +100,9 @@ public class InteractRunner {
     }
 
     /**
-     * Проверяет на валидность введенную строку на соответствие "yes/no"
-     * @param str   строка с текстом
-     * @return      true, если строка соответствует "yes" или "no"
+     * Validate the user answer by "yes/no"
+     * @param str   the user string
+     * @return      true, if user answer is "yes" or "no"
      */
     private boolean validateYesNo(String str) {
         boolean isValid = true;
@@ -113,7 +113,7 @@ public class InteractRunner {
     }
 
     /**
-     * Запрашивает у пользователя математический оператор
+     * Request the user input operator
      */
     private void requestOperator() {
         System.out.println("Choose the operation: plus/p, sub/s, multi/m, divide/d");
@@ -124,8 +124,8 @@ public class InteractRunner {
     }
 
     /**
-     * Проверяет на валидность введенный пользователем оператор
-     * @return true, если оператор валидный
+     * Check the operator input by user
+     * @return true, if operator is valid
      */
     private boolean validateOperator() {
         boolean isValid = true;
@@ -137,7 +137,7 @@ public class InteractRunner {
     }
 
     /**
-     * Производит расчет
+     * Calculating
      */
     private void calculate() {
         switch (operation.charAt(0)) {

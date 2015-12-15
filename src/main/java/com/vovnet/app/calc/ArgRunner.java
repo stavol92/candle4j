@@ -1,9 +1,9 @@
 package com.vovnet.app.calc;
 
 /**
- * Created by Vladimir Saykovsky on 14.12.2015.
+ * Created by Vladimir on 14.12.2015.
  *
- * ѕроизводит расчеты на основании аргументов переданных при старте программы
+ * Calculate arguments
  */
 public class ArgRunner {
 
@@ -23,9 +23,9 @@ public class ArgRunner {
 
     /**
      * constructor
-     * @param first     первое число
-     * @param operator  математический оператор
-     * @param second    второе число
+     * @param first     first number
+     * @param operator  math operator
+     * @param second    second number
      */
     public ArgRunner(int first, String operator, int second) {
         this.first = first;
@@ -35,7 +35,7 @@ public class ArgRunner {
     }
 
     /**
-     * «апускает расчет
+     * Starting calculate
      */
     public void start() {
         calculate();
@@ -43,14 +43,14 @@ public class ArgRunner {
     }
 
     /**
-     * ¬ыводит результат вычислений в консоль
+     * Print result to console
      */
     private void printResult() {
         System.out.println(first + operator + second + " = " + calculator.getResult());
     }
 
     /**
-     * ѕроизводит расчет
+     * Calculating
      */
     private void calculate() {
         switch (operator.charAt(0)) {

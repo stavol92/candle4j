@@ -1,15 +1,15 @@
 package com.vovnet.app.calc;
 
 /**
- * Created by Vladimir Saykovsky on 14.12.2015.
+ * Created by Vladimir on 14.12.2015.
  */
-public class Calculator {
+class Calculator {
 
     private int result;
 
     /**
-     * Складывает переданные числа
-     * @param params
+     * Summarizes the numbers
+     * @param params numbers
      */
     public void add(int ... params) {
         for (Integer param : params) {
@@ -18,8 +18,8 @@ public class Calculator {
     }
 
     /**
-     * Вычитает переданные числа
-     * @param params
+     * Subtracts the numbers
+     * @param params numbers
      */
     public void sub(int ... params) {
         for (Integer param : params) {
@@ -28,8 +28,8 @@ public class Calculator {
     }
 
     /**
-     * Умножает переданные числа
-     * @param params
+     * Multiplies the numbers
+     * @param params numbers
      */
     public void multiply(int ... params) {
         for (Integer param : params) {
@@ -38,8 +38,8 @@ public class Calculator {
     }
 
     /**
-     * Делит на переданные числа
-     * @param params
+     * Divides the numbers
+     * @param params numbers
      */
     public void divide(int ... params) {
         for (Integer param : params) {
@@ -48,23 +48,15 @@ public class Calculator {
     }
 
     /**
-     * Возвращает результат вычислений
-     * @return
+     * Return the result
+     * @return the result
      */
     public int getResult() {
         return this.result;
     }
 
     /**
-     * Устанавливает результат
-     * @param result
-     */
-    public void setResult(int result) {
-        this.result = result;
-    }
-
-    /**
-     * Очищает результат
+     * Clean the result
      */
     public void cleanResult() {
         this.result = 0;
