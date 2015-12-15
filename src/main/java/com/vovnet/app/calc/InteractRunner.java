@@ -101,8 +101,8 @@ public class InteractRunner {
 
     /**
      * Проверяет на валидность введенную строку на соответствие "yes/no"
-     * @param str
-     * @return true, если строка соответствует "yes" или "no"
+     * @param str   строка с текстом
+     * @return      true, если строка соответствует "yes" или "no"
      */
     private boolean validateYesNo(String str) {
         boolean isValid = true;
