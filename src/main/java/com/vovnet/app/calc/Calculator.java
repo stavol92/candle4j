@@ -2,6 +2,8 @@ package com.vovnet.app.calc;
 
 /**
  * Created by Vladimir on 14.12.2015.
+ *
+ * Calculate
  */
 class Calculator {
 
